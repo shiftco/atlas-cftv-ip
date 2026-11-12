@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlas Visual de Redes CFTV IP — 30 Pranchas Técnicas Offline</title>
+  <meta name="description" content="Instale, configure e resolva qualquer rede de CFTV IP em 3 minutos. 30 pranchas visuais (diagramas, mapas de configuração e fluxogramas) 100% offline no celular.">
+  <meta name="theme-color" content="#09090B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main id="conteudo-principal">
+    <!-- DOBRA 1: HERO (ACIMA DA DOBRA) -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero__layout">
+        <div class="hero__copy">
+          <p class="eyebrow-badge">EXCLUSIVO PARA TÉCNICOS E INTEGRADORES DE CFTV IP</p>
+          <h1 id="hero-heading" class="hero__title">
+            Instale, Configure e Resolva Qualquer Rede de CFTV IP em <span class="text-accent">3 Minutos</span>
+          </h1>
+          <p class="hero__subtitle">
+            Tenha no bolso <strong>30 Pranchas Visuais</strong> (10 Diagramas de Topologia + 10 Mapas Universais de Configuração + 10 Fluxogramas de Diagnóstico) para consultar <strong>100% offline no celular</strong> em cima da escada ou na frente do rack.
+          </p>
+
+          <ul class="hero__proof-pills" aria-label="Compatibilidade e acesso">
+            <li>100% Offline no Celular</li>
+            <li>Intelbras • Hikvision • Dahua • ONVIF</li>
+            <li>Acesso Vitalício em PDF Interativo</li>
+          </ul>
+        </div>
+
+        <!-- Ilustração vetorial minimalista de alta definição (Mockup Smartphone + Prancha CFTV IP) -->
+        <div class="hero__visual">
+          <div class="device-frame">
+            <div class="device-frame__topbar">
+              <span class="device-frame__tag">PRANCHA #01 • TOPOLOGIA PADRÃO</span>
+              <span class="device-frame__status">OFFLINE READY</span>
+            </div>
+            <svg viewBox="0 0 460 320" class="blueprint-svg" role="img" aria-label="Diagrama vetorial de topologia de rede CFTV IP mostrando roteador, switch PoE gerenciável, gravador NVR e 4 câmeras IP conectadas">
+              <defs>
+                <pattern id="hero-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#E4E4E7" stroke-width="0.7" />
+                </pattern>
+              </defs>
+              <rect width="460" height="320" rx="10" fill="#FAFAFA" />
+              <rect width="460" height="320" rx="10" fill="url(#hero-grid)" />
+
+              <!-- Conexões principais -->
+              <path d="M 105 64 L 200 64" stroke="#2563EB" stroke-width="2.5" stroke-dasharray="5 3" fill="none" />
+              <path d="M 290 64 L 360 64" stroke="#18181B" stroke-width="2.5" fill="none" />
+              <path d="M 245 94 L 245 148" stroke="#2563EB" stroke-width="2.5" fill="none" />
+              <path d="M 75 148 L 385 148" stroke="#2563EB" stroke-width="2.5" fill="none" />
+              <path d="M 75 148 L 75 186" stroke="#2563EB" stroke-width="2.5" fill="none" />
+              <path d="M 188 148 L 188 186" stroke="#2563EB" stroke-width="2.5" fill="none" />
+              <path d="M 302 148 L 302 186" stroke="#2563EB" stroke-width="2.5" fill="none" />
+              <path d="M 385 148 L 385 186" stroke="#2563EB" stroke-width="2.5" fill="none" />
+
+              <!-- Roteador -->
+              <rect x="20" y="34" width="85" height="60" rx="8" fill="#FFFFFF" stroke="#18181B" stroke-width="1.8" />
+              <text x="62" y="57" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#09090B">ROTEADOR</text>
+              <text x="62" y="72" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#52525B">192.168.10.1</text>
+              <text x="62" y="84" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#2563EB">DHCP .100-.200</text>
+
+              <!-- Switch PoE -->
+              <rect x="200" y="34" width="90" height="60" rx="8" fill="#09090B" />
+              <text x="245" y="56" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">SWITCH PoE</text>
+              <text x="245" y="71" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#93C5FD">802.3af/at</text>
+              <text x="245" y="84" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#A1A1AA">UPLINK GIGABIT</text>
+
+              <!-- NVR -->
+              <rect x="360" y="34" width="80" height="60" rx="8" fill="#EFF6FF" stroke="#2563EB" stroke-width="2" />
+              <text x="400" y="56" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="800" fill="#1D4ED8">NVR IP</text>
+              <text x="400" y="71" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#09090B">192.168.10.2</text>
+              <text x="400" y="84" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#52525B">IP FIXO / ONVIF</text>
+
+              <!-- Câmeras IP -->
+              <g>
+                <rect x="30" y="186" width="90" height="64" rx="8" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.6" />
+                <text x="75" y="207" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#09090B">CAM 01</text>
+                <text x="75" y="222" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#2563EB">.10.11</text>
+                <text x="75" y="236" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#52525B">PoE • 6.5W</text>
+              </g>
+              <g>
+                <rect x="143" y="186" width="90" height="64" rx="8" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.6" />
+                <text x="188" y="207" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#09090B">CAM 02</text>
+                <text x="188" y="222" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#2563EB">.10.12</text>
+                <text x="188" y="236" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#52525B">PoE • 6.5W</text>
+              </g>
+              <g>
+                <rect x="257" y="186" width="90" height="64" rx="8" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.6" />
+                <text x="302" y="207" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#09090B">CAM 03</text>
+                <text x="302" y="222" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#2563EB">.10.13</text>
+                <text x="302" y="236" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#52525B">PoE • 8.0W</text>
+              </g>
+              <g>
+                <rect x="360" y="186" width="80" height="64" rx="8" fill="#FFFFFF" stroke="#18181B" stroke-width="1.6" />
+                <text x="400" y="207" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#09090B">CAM 04</text>
+                <text x="400" y="222" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="#2563EB">.10.14</text>
+                <text x="400" y="236" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#52525B">H.265 • 4MP</text>
+              </g>
+
+              <!-- Legenda rodapé blueprint -->
+              <rect x="20" y="268" width="420" height="34" rx="6" fill="#18181B" />
+              <text x="34" y="289" font-family="JetBrains Mono, monospace" font-size="9" fill="#FFFFFF">REGRA DE OURO: Sub-rede única 192.168.10.x | IPs fixos abaixo do range DHCP (.11 a .50)</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="container hero__scroll-cue">
+        <a href="#por-dentro" class="scroll-indicator">
+          <span>Veja as pranchas visuais por dentro</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- DOBRA 2: O QUE VOCÊ RECEBE + CARROSSEL DEMONSTRATIVO -->
+    <section id="por-dentro" class="section section--surface" aria-labelledby="dobra2-heading">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__kicker">POR DENTRO DO MATERIAL</p>
+          <h2 id="dobra2-heading" class="section__title">Veja Exatamente Como o Atlas Visual Funciona na Prática</h2>
+          <p class="section__lead">Deslize para o lado para inspecionar exemplos reais das pranchas que você vai abrir direto no celular durante a obra.</p>
+        </header>
+
+        <!-- Carrossel horizontal acessível conforme guia Modern Web Guidance -->
+        <div class="carousel" role="region" aria-roledescription="carousel" aria-labelledby="dobra2-heading">
+          <div class="carousel__viewport">
+            <div class="carousel__track" tabindex="0">
+              <!-- Lâmina 1 -->
+              <article class="carousel__slide" role="group" aria-roledescription="slide" aria-label="1 de 4" data-marker-name="Ir para lâmina 1: Diagrama #02 Rede CFTV Isolada">
+                <div class="sheet-card">
+                  <div class="sheet-card__meta">
+                    <span class="sheet-badge sheet-badge--blue">DIAGRAMA #02</span>
+                    <span class="sheet-code">REDE ISOLADA / VLAN</span>
+                  </div>
+                  <h3 class="sheet-card__title">Rede CFTV IP Isolada do Wi-Fi (Sem Travamento)</h3>
+                  <svg viewBox="0 0 420 230" class="sheet-svg" role="img" aria-label="Diagrama de rede CFTV IP separando VLAN 10 para câmeras e VLAN 1 para Wi-Fi">
+                    <rect width="420" height="230" rx="8" fill="#F8FAFC" stroke="#E4E4E7" />
+                    <rect x="20" y="20" width="110" height="48" rx="6" fill="#FFFFFF" stroke="#18181B" stroke-width="1.5" />
+                    <text x="75" y="42" text-anchor="middle" font-family="Inter, sans-serif" font-size="9.5" font-weight="700" fill="#09090B">ROTEADOR CLIENTE</text>
+                    <text x="75" y="56" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#52525B">VLAN 1: Wi-Fi Escritório</text>
+
+                    <path d="M 130 44 L 200 44" stroke="#2563EB" stroke-width="2" />
+                    <rect x="200" y="20" width="200" height="48" rx="6" fill="#09090B" />
+                    <text x="300" y="41" text-anchor="middle" font-family="Inter, sans-serif" font-size="9.5" font-weight="700" fill="#FFFFFF">SWITCH GERENCIÁVEL PoE</text>
+                    <text x="300" y="56" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#93C5FD">VLAN 10: Portas 1-16 (Isolado)</text>
+
+                    <path d="M 245 68 L 245 104 L 110 104 L 110 124" stroke="#2563EB" stroke-width="2" fill="none" />
+                    <path d="M 300 68 L 300 124" stroke="#2563EB" stroke-width="2" fill="none" />
+
+                    <rect x="20" y="124" width="180" height="72" rx="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.6" />
+                    <text x="110" y="146" text-anchor="middle" font-family="Inter, sans-serif" font-size="9.5" font-weight="800" fill="#1D4ED8">CÂMERAS IP (SUB-REDE .20.x)</text>
+                    <text x="110" y="163" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#09090B">10.20.0.11 → 10.20.0.26</text>
+                    <text x="110" y="179" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#52525B">Tráfego pesado fica 100% no switch</text>
+
+                    <rect x="220" y="124" width="180" height="72" rx="6" fill="#FFFFFF" stroke="#18181B" stroke-width="1.6" />
+                    <text x="310" y="146" text-anchor="middle" font-family="Inter, sans-serif" font-size="9.5" font-weight="800" fill="#09090B">NVR (PORTA TRUNK / LAN 2)</text>
+                    <text x="310" y="163" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#2563EB">LAN 1: 10.20.0.2 | LAN 2: DHCP</text>
+                    <text x="310" y="179" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#52525B">App remoto sem derrubar o Wi-Fi</text>
+                  </svg>
+                  <p class="sheet-card__caption">Separe o tráfego das câmeras da rede corporativa sem perder o acesso no celular.</p>
+                </div>
+              </article>
+
+              <!-- Lâmina 2 -->
+              <article class="carousel__slide" role="group" aria-roledescription="slide" aria-label="2 de 4" data-marker-name="Ir para lâmina 2: Mapa #07 Integração Multimarcas">
+                <div class="sheet-card">
+                  <div class="sheet-card__meta">
+                    <span class="sheet-badge sheet-badge--dark">MAPA #07</span>
+                    <span class="sheet-code">ONVIF / RTSP UNIVERSAL</span>
+                  </div>
+                  <h3 class="sheet-card__title">Adição Multimarcas (Intelbras + Hikvision + Dahua)</h3>
+                  <svg viewBox="0 0 420 230" class="sheet-svg" role="img" aria-label="Mapa universal de parâmetros ONVIF e RTSP para integrar câmeras e NVRs de marcas diferentes">
+                    <rect width="420" height="230" rx="8" fill="#F8FAFC" stroke="#E4E4E7" />
+                    <rect x="20" y="18" width="380" height="38" rx="6" fill="#18181B" />
+                    <text x="36" y="41" font-family="JetBrains Mono, monospace" font-size="9.5" font-weight="700" fill="#FFFFFF">CAMPOS OBRIGATÓRIOS NA CÂMERA &amp; NVR</text>
+
+                    <rect x="20" y="68" width="182" height="66" rx="6" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.5" />
+                    <text x="32" y="88" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#2563EB">1. END. IP &amp; PORTA ONVIF</text>
+                    <text x="32" y="104" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#09090B">IP: Fixo fora do DHCP</text>
+                    <text x="32" y="119" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#52525B">ONVIF: Porta 80 ou 8080</text>
+
+                    <rect x="218" y="68" width="182" height="66" rx="6" fill="#FFFFFF" stroke="#18181B" stroke-width="1.5" />
+                    <text x="230" y="88" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#09090B">2. USUÁRIO ONVIF DEDICADO</text>
+                    <text x="230" y="104" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#09090B">Ativar protocolo ONVIF</text>
+                    <text x="230" y="119" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#52525B">Criar conta nível Admin</text>
+
+                    <rect x="20" y="146" width="380" height="66" rx="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.5" />
+                    <text x="34" y="166" font-family="Inter, sans-serif" font-size="9" font-weight="800" fill="#1D4ED8">3. REGRA DE OURO PARA NÃO DAR "SEM IMAGEM" (CODEC)</text>
+                    <text x="34" y="183" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#09090B">Main Stream: H.264 / H.265 padrão (desligar Smart/H.265+)</text>
+                    <text x="34" y="198" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#52525B">Sub Stream: D1/VGA • FPS 15 • Taxa constante (CBR)</text>
+                  </svg>
+                  <p class="sheet-card__caption">Os exatos parâmetros universais para fazer qualquer câmera subir em qualquer gravador.</p>
+                </div>
+              </article>
+
+              <!-- Lâmina 3 -->
+              <article class="carousel__slide" role="group" aria-roledescription="slide" aria-label="3 de 4" data-marker-name="Ir para lâmina 3: Fluxograma #03 Câmera Não Sobe no NVR">
+                <div class="sheet-card">
+                  <div class="sheet-card__meta">
+                    <span class="sheet-badge sheet-badge--blue">FLUXOGRAMA #03</span>
+                    <span class="sheet-code">DIAGNÓSTICO 3 MIN</span>
+                  </div>
+                  <h3 class="sheet-card__title">Câmera Responde na Rede, mas Não Sobe no NVR</h3>
+                  <svg viewBox="0 0 420 230" class="sheet-svg" role="img" aria-label="Fluxograma de diagnóstico passo a passo para câmera que responde ao ping mas não aparece no NVR">
+                    <rect width="420" height="230" rx="8" fill="#F8FAFC" stroke="#E4E4E7" />
+
+                    <rect x="110" y="14" width="200" height="32" rx="16" fill="#09090B" />
+                    <text x="210" y="34" text-anchor="middle" font-family="Inter, sans-serif" font-size="9.5" font-weight="700" fill="#FFFFFF">1. Ping OK, mas não adiciona no NVR?</text>
+                    <path d="M 210 46 L 210 66" stroke="#2563EB" stroke-width="2" />
+
+                    <rect x="95" y="66" width="230" height="36" rx="6" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.6" />
+                    <text x="210" y="88" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#09090B">Mesma sub-rede + Gateway igual ao NVR?</text>
+
+                    <path d="M 95 84 L 58 84 L 58 118" stroke="#DC2626" stroke-width="1.8" fill="none" />
+                    <path d="M 325 84 L 352 84 L 352 118" stroke="#2563EB" stroke-width="1.8" fill="none" />
+                    <text x="48" y="80" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#DC2626">NÃO</text>
+                    <text x="334" y="80" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#2563EB">SIM</text>
+
+                    <rect x="14" y="118" width="142" height="50" rx="6" fill="#FEF2F2" stroke="#DC2626" stroke-width="1.4" />
+                    <text x="85" y="139" text-anchor="middle" font-family="Inter, sans-serif" font-size="8.5" font-weight="700" fill="#991B1B">Corrigir IP/Máscara</text>
+                    <text x="85" y="153" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#52525B">Alinhar faixa .x</text>
+
+                    <rect x="174" y="118" width="232" height="50" rx="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.6" />
+                    <text x="290" y="138" text-anchor="middle" font-family="Inter, sans-serif" font-size="8.5" font-weight="700" fill="#1D4ED8">Testar Porta ONVIF (80/8080) &amp; Senha</text>
+                    <text x="290" y="153" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#09090B">Se erro persiste → Desligar H.265+</text>
+
+                    <rect x="14" y="182" width="392" height="32" rx="6" fill="#18181B" />
+                    <text x="210" y="202" text-anchor="middle" font-family="Inter, sans-serif" font-size="8.5" font-weight="600" fill="#FFFFFF">AÇÃO FINAL: Adicionar Manualmente via ONVIF ou URL RTSP (/cam/realmonitor)</text>
+                  </svg>
+                  <p class="sheet-card__caption">Pare de chutar IP ou resetar câmera: siga a árvore Sim/Não até a causa raiz.</p>
+                </div>
+              </article>
+
+              <!-- Lâmina 4 -->
+              <article class="carousel__slide" role="group" aria-roledescription="slide" aria-label="4 de 4" data-marker-name="Ir para lâmina 4: Fluxograma #06 Câmeras Caindo à Noite">
+                <div class="sheet-card">
+                  <div class="sheet-card__meta">
+                    <span class="sheet-badge sheet-badge--dark">FLUXOGRAMA #06</span>
+                    <span class="sheet-code">QUEDA DE INFRA / PoE</span>
+                  </div>
+                  <h3 class="sheet-card__title">Várias Câmeras Caindo Juntas Quando Escurece</h3>
+                  <svg viewBox="0 0 420 230" class="sheet-svg" role="img" aria-label="Fluxograma identificando causas de queda noturna simultânea em câmeras IP: orçamento PoE e cabo CCA">
+                    <rect width="420" height="230" rx="8" fill="#F8FAFC" stroke="#E4E4E7" />
+                    <rect x="20" y="18" width="380" height="34" rx="6" fill="#09090B" />
+                    <text x="210" y="39" text-anchor="middle" font-family="Inter, sans-serif" font-size="9.5" font-weight="700" fill="#FFFFFF">SINTOMA: Tudo OK de dia • Câmeras reiniciam ao ligar o IR (Noite)</text>
+
+                    <rect x="20" y="68" width="116" height="92" rx="6" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.6" />
+                    <text x="78" y="88" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="800" fill="#2563EB">PASSO 1</text>
+                    <text x="78" y="105" text-anchor="middle" font-family="Inter, sans-serif" font-size="8.5" font-weight="700" fill="#09090B">Orçamento PoE</text>
+                    <text x="78" y="121" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#52525B">IR dobra consumo</text>
+                    <text x="78" y="135" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#52525B">de 4W para 11W</text>
+
+                    <path d="M 136 114 L 152 114" stroke="#2563EB" stroke-width="2" />
+
+                    <rect x="152" y="68" width="116" height="92" rx="6" fill="#FFFFFF" stroke="#18181B" stroke-width="1.6" />
+                    <text x="210" y="88" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="800" fill="#09090B">PASSO 2</text>
+                    <text x="210" y="105" text-anchor="middle" font-family="Inter, sans-serif" font-size="8.5" font-weight="700" fill="#09090B">Cabo CCA vs Cobre</text>
+                    <text x="210" y="121" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#52525B">Alumínio acobreado</text>
+                    <text x="210" y="135" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#52525B">derruba tensão &gt;45m</text>
+
+                    <path d="M 268 114 L 284 114" stroke="#2563EB" stroke-width="2" />
+
+                    <rect x="284" y="68" width="116" height="92" rx="6" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.6" />
+                    <text x="342" y="88" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="800" fill="#1D4ED8">PASSO 3</text>
+                    <text x="342" y="105" text-anchor="middle" font-family="Inter, sans-serif" font-size="8.5" font-weight="700" fill="#09090B">Uplink Saturado</text>
+                    <text x="342" y="121" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#52525B">Bitrate sobe à noite</text>
+                    <text x="342" y="135" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="#52525B">Switch 100M engasga</text>
+
+                    <rect x="20" y="176" width="380" height="36" rx="6" fill="#18181B" />
+                    <text x="210" y="198" text-anchor="middle" font-family="Inter, sans-serif" font-size="8.5" font-weight="600" fill="#FFFFFF">SOLUÇÃO: Somar Watts totais x 0.8 + Exigir Uplink Gigabit + Cabo 100% Cobre</text>
+                  </svg>
+                  <p class="sheet-card__caption">Mate defeitos intermitentes na primeira visita técnica sem voltar 3 vezes na mesma obra.</p>
+                </div>
+              </article>
+            </div>
+
+            <!-- Botões Anterior / Próximo conforme pattern do carousel -->
+            <div class="carousel__controls" aria-label="Controles do carrossel">
+              <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Lâmina anterior">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                  <path d="M15 18l-6-6 6-6" />
+                </svg>
+              </button>
+              <button type="button" class="carousel__btn carousel__btn--next" aria-label="Próxima lâmina">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Marcadores (Dots) -->
+          <div class="carousel__markers" role="group" aria-label="Selecionar lâmina de exemplo">
+            <button type="button" class="carousel__dot" aria-label="Ir para lâmina 1: Diagrama #02 Rede CFTV Isolada" aria-current="true"></button>
+            <button type="button" class="carousel__dot" aria-label="Ir para lâmina 2: Mapa #07 Integração Multimarcas"></button>
+            <button type="button" class="carousel__dot" aria-label="Ir para lâmina 3: Fluxograma #03 Câmera Não Sobe no NVR"></button>
+            <button type="button" class="carousel__dot" aria-label="Ir para lâmina 4: Fluxograma #06 Câmeras Caindo à Noite"></button>
+          </div>
+
+          <p class="sr-only carousel__status" role="status" aria-live="polite"></p>
+        </div>
+
+        <!-- Lista objetiva dos 3 pilares -->
+        <div class="pillars-grid">
+          <article class="pillar-card">
+            <div class="pillar-card__icon" aria-hidden="true">01</div>
+            <div class="pillar-card__body">
+              <h3>10 Diagramas de Topologia CFTV IP</h3>
+              <p>Esquemas prontos do cenário residencial simples até condomínios com múltiplos switches PoE, enlace ponto a ponto e rede isolada em VLAN.</p>
+            </div>
+          </article>
+
+          <article class="pillar-card">
+            <div class="pillar-card__icon" aria-hidden="true">02</div>
+            <div class="pillar-card__body">
+              <h3>10 Mapas Universais de Configuração</h3>
+              <p>Onde preencher IP, máscara, gateway, ONVIF, RTSP, sub-stream e acesso remoto em qualquer marca (sem depender de tela fixa que muda toda atualização).</p>
+            </div>
+          </article>
+
+          <article class="pillar-card">
+            <div class="pillar-card__icon" aria-hidden="true">03</div>
+            <div class="pillar-card__body">
+              <h3>10 Fluxogramas de Diagnóstico em 3 Minutos</h3>
+              <p>Árvores visuais de "Sim ou Não" para identificar por que a câmera não aparece, dá erro de senha, congela ou derruba a rede à noite.</p>
+            </div>
+          </article>
+        </div>
+
+        <p class="delivery-banner">
+          <strong>Entrega imediata:</strong> PDF Interativo com Índice Clicável (toque no cenário ou problema no celular e vá direto para a prancha).
+        </p>
+      </div>
+    </section>
+
+    <!-- DOBRA 3: BENEFÍCIOS NO CAMPO DE BATALHA -->
+    <section class="section" aria-labelledby="dobra3-heading">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__kicker">ROTINA EM CAMPO</p>
+          <h2 id="dobra3-heading" class="section__title">Chega de Perder Meio Dia de Serviço por Conflito de IP ou Câmera Sumindo no NVR</h2>
+        </header>
+
+        <div class="benefits-grid">
+          <article class="benefit-card">
+            <div class="benefit-card__badge" aria-hidden="true">⚡</div>
+            <h3>Diagnóstico em 3 Minutos</h3>
+            <p>Nada de ficar chutando endereço IP ou ligando no suporte do distribuidor enquanto o cliente olha no relógio.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-card__badge" aria-hidden="true">🔗</div>
+            <h3>Misture Marcas Sem Erro</h3>
+            <p>Domine os campos universais de ONVIF, RTSP e sub-rede para integrar câmeras Intelbras, Hikvision, Dahua e genéricas no mesmo projeto.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-card__badge" aria-hidden="true">📶</div>
+            <h3>Funciona 100% Sem Internet</h3>
+            <p>Salvo offline no seu celular. Ideal para subsolos, galpões fechados, áreas rurais e obras que ainda nem têm link de internet instalado.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-card__badge" aria-hidden="true">📈</div>
+            <h3>Pegue Obras Maiores e Mais Lucrativas</h3>
+            <p>Saia apenas do cabo coaxial e assuma projetos de CFTV IP bem estruturados com segurança de quem tem um mapa de engenheiro na mão.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOBRA 4: PROVA SOCIAL + 4 BÔNUS EXCLUSIVOS -->
+    <section class="section section--dark" aria-labelledby="dobra4-social-heading">
+      <div class="container">
+        <header class="section__header section__header--light">
+          <p class="section__kicker section__kicker--blue">QUEM USA NO DIA A DIA</p>
+          <h2 id="dobra4-social-heading" class="section__title">Quem Usa em Campo Recomenda:</h2>
+        </header>
+
+        <div class="testimonials-grid">
+          <article class="wa-card">
+            <div class="wa-card__header">
+              <div class="wa-card__avatar" aria-hidden="true">M</div>
+              <div>
+                <p class="wa-card__name">Marcos — Técnico CFTV</p>
+                <p class="wa-card__status">mensagem verificada em campo</p>
+              </div>
+            </div>
+            <blockquote class="wa-card__bubble">
+              "Salvei o PDF no WhatsApp pra abrir na obra sem internet. Ontem uma câmera Hikvision não subia no NVR Intelbras nem a pau. Abri o fluxograma de incompatibilidade, bati o olho na dica do codec H.265 e resolvi em 2 minutos."
+            </blockquote>
+          </article>
+
+          <article class="wa-card">
+            <div class="wa-card__header">
+              <div class="wa-card__avatar" aria-hidden="true">R</div>
+              <div>
+                <p class="wa-card__name">Rodrigo — Instalações</p>
+                <p class="wa-card__status">mensagem verificada em campo</p>
+              </div>
+            </div>
+            <blockquote class="wa-card__bubble">
+              "Só o diagrama de cálculo PoE e sub-rede já pagou o material 10 vezes. Eu perdia hora batendo cabeça quando várias câmeras caíam à noite."
+            </blockquote>
+          </article>
+
+          <article class="wa-card">
+            <div class="wa-card__header">
+              <div class="wa-card__avatar" aria-hidden="true">A</div>
+              <div>
+                <p class="wa-card__name">André — Integrador</p>
+                <p class="wa-card__status">mensagem verificada em campo</p>
+              </div>
+            </div>
+            <blockquote class="wa-card__bubble">
+              "Imprimi as lâminas principais e deixei plastificadas na maleta dos meus ajudantes. Acabou o 'chefe, me liga aqui que a câmera não deu IP'."
+            </blockquote>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--surface" aria-labelledby="dobra4-bonus-heading">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__kicker">PRESENTES INCLUSOS HOJE</p>
+          <h2 id="dobra4-bonus-heading" class="section__title">Levando Hoje o Plano Integrador PRO, Você Recebe 4 Bônus Grátis:</h2>
+        </header>
+
+        <div class="bonus-grid">
+          <article class="bonus-card">
+            <span class="bonus-card__tag">BÔNUS #1</span>
+            <h3>Glossário Visual de Redes CFTV IP</h3>
+            <p>Todos os termos que travam o técnico na obra (VLAN, PoE, Gateway, Máscara, Bitrate, ONVIF, RTSP) explicados de forma visual e direta.</p>
+            <div class="bonus-card__price">
+              <span class="price-old">De R$ 37,00</span>
+              <span class="price-free">GRÁTIS</span>
+            </div>
+          </article>
+
+          <article class="bonus-card">
+            <span class="bonus-card__tag">BÔNUS #2</span>
+            <h3>Lâminas "Cola de Maleta" (Impressão A4)</h3>
+            <p>Versão de alto contraste pronta para imprimir, plastificar e deixar na caixa de ferramentas ou passar para sua equipe de instalação.</p>
+            <div class="bonus-card__price">
+              <span class="price-old">De R$ 29,00</span>
+              <span class="price-free">GRÁTIS</span>
+            </div>
+          </article>
+
+          <article class="bonus-card">
+            <span class="bonus-card__tag">BÔNUS #3</span>
+            <h3>Guia Visual de Cabeamento &amp; Orçamento PoE</h3>
+            <p>Tabelas rápidas de distância segura por tipo de cabo (100% Cobre vs. CCA) e cálculo de Watts do switch PoE para câmera não apagar à noite.</p>
+            <div class="bonus-card__price">
+              <span class="price-old">De R$ 37,00</span>
+              <span class="price-free">GRÁTIS</span>
+            </div>
+          </article>
+
+          <article class="bonus-card">
+            <span class="bonus-card__tag">BÔNUS #4</span>
+            <h3>Checklist Mestre de Obra (Pré-Vistoria à Entrega)</h3>
+            <p>Lista enxuta para conferir infraestrutura antes de passar cabo, validar IPs na entrega e documentar tudo para nunca mais dar garantia grátis por erro de rede.</p>
+            <div class="bonus-card__price">
+              <span class="price-old">De R$ 27,00</span>
+              <span class="price-free">GRÁTIS</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOBRA 5: OFERTA ESPECIAL — 2 PLANOS COM AVERSÃO À PERDA -->
+    <section id="planos" class="section section--pricing" aria-labelledby="dobra5-heading">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__kicker">OFERTA DE LANÇAMENTO</p>
+          <h2 id="dobra5-heading" class="section__title">Escolha o Seu Plano e Baixe Ainda Hoje:</h2>
+          <p class="section__lead">Acesso liberado na hora por e-mail e WhatsApp após a confirmação do pagamento.</p>
+        </header>
+
+        <div class="plans-grid">
+          <!-- PLANO BÁSICO -->
+          <article class="plan-card plan-card--basic">
+            <div class="plan-card__head">
+              <p class="plan-card__tier">PLANO BÁSICO</p>
+              <div class="plan-card__price-box">
+                <span class="plan-card__currency">R$</span>
+                <span class="plan-card__amount">19,90</span>
+              </div>
+              <p class="plan-card__note">Pagamento único</p>
+            </div>
+
+            <ul class="plan-features">
+              <li class="feature--yes"><span>✅</span> 10 Diagramas de Topologia CFTV IP</li>
+              <li class="feature--yes"><span>✅</span> 10 Fluxogramas de Diagnóstico em Campo</li>
+              <li class="feature--yes"><span>✅</span> PDF Offline para Celular</li>
+              <li class="feature--no"><span>❌</span> <s>10 Mapas Universais de Configuração</s></li>
+              <li class="feature--no"><span>❌</span> <s>Bônus #1: Glossário Visual CFTV IP</s></li>
+              <li class="feature--no"><span>❌</span> <s>Bônus #2: Lâminas A4 "Cola de Maleta"</s></li>
+              <li class="feature--no"><span>❌</span> <s>Bônus #3: Guia de Cabeamento &amp; PoE</s></li>
+              <li class="feature--no"><span>❌</span> <s>Bônus #4: Checklist Mestre de Obra</s></li>
+              <li class="feature--no"><span>❌</span> <s>Acesso Vitalício e Atualizações</s></li>
+            </ul>
+
+            <p class="plan-card__warranty">Garantia de 7 dias</p>
+            <a href="#checkout-basico" class="btn btn--outline" data-plan="basico">QUERO APENAS O BÁSICO (R$ 19,90)</a>
+          </article>
+
+          <!-- PLANO INTEGRADOR PRO -->
+          <article class="plan-card plan-card--pro">
+            <div class="plan-card__popular">🔥 MAIS ESCOLHIDO POR 84% DOS TÉCNICOS</div>
+            <div class="plan-card__head">
+              <p class="plan-card__tier plan-card__tier--pro">PLANO INTEGRADOR PRO (PACOTE COMPLETO)</p>
+              <p class="plan-card__anchor">De <s>R$ 167,00</s> por apenas:</p>
+              <div class="plan-card__price-box">
+                <span class="plan-card__currency">R$</span>
+                <span class="plan-card__amount">37,00</span>
+              </div>
+              <p class="plan-card__note">ou 4x de R$ 9,90</p>
+            </div>
+
+            <ul class="plan-features">
+              <li class="feature--yes"><span>✅</span> <strong>10 Diagramas de Topologia CFTV IP</strong></li>
+              <li class="feature--yes"><span>✅</span> <strong>10 Mapas Universais de Configuração (Multimarcas)</strong></li>
+              <li class="feature--yes"><span>✅</span> <strong>10 Fluxogramas de Diagnóstico em 3 Minutos</strong></li>
+              <li class="feature--yes"><span>✅</span> <strong>PDF Interativo com Índice Clicável (100% Offline)</strong></li>
+              <li class="feature--yes"><span>✅</span> <strong>Bônus #1:</strong> Glossário Visual de Redes CFTV IP <span class="badge-free">(GRÁTIS)</span></li>
+              <li class="feature--yes"><span>✅</span> <strong>Bônus #2:</strong> Lâminas "Cola de Maleta" p/ Impressão A4 <span class="badge-free">(GRÁTIS)</span></li>
+              <li class="feature--yes"><span>✅</span> <strong>Bônus #3:</strong> Guia Visual de Cabeamento &amp; Orçamento PoE <span class="badge-free">(GRÁTIS)</span></li>
+              <li class="feature--yes"><span>✅</span> <strong>Bônus #4:</strong> Checklist Mestre de Obra <span class="badge-free">(GRÁTIS)</span></li>
+              <li class="feature--yes"><span>✅</span> <strong>Acesso Vitalício + Todas as Atualizações Futuras</strong></li>
+              <li class="feature--yes"><span>✅</span> <strong>Garantia Blindada de 30 Dias</strong></li>
+            </ul>
+
+            <a href="#checkout-pro" class="btn btn--primary" data-plan="pro">SIM! QUERO O PLANO INTEGRADOR PRO AGORA 🚀</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOBRA 6: GARANTIA INCONDICIONAL -->
+    <section class="section section--guarantee" aria-labelledby="dobra6-heading">
+      <div class="container guarantee-box">
+        <div class="guarantee-seal" aria-hidden="true">
+          <span class="guarantee-seal__days">30</span>
+          <span class="guarantee-seal__label">DIAS DE<br>GARANTIA</span>
+        </div>
+        <div class="guarantee-box__content">
+          <p class="section__kicker">30 DIAS DE GARANTIA INCONDICIONAL</p>
+          <h2 id="dobra6-heading" class="section__title">Risco Zero: Teste na Bancada ou na Obra por 30 Dias</h2>
+          <p>
+            Baixe o <strong>Atlas Visual de Redes CFTV IP</strong> agora, salve no seu celular e leve para as próximas instalações. Se você não resolver falhas muito mais rápido ou sentir que o material não se pagou já no primeiro chamado, basta enviar 1 e-mail dentro de 30 dias e devolvemos 100% do seu dinheiro na hora. Sem perguntas e sem burocracia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOBRA 7: FAQ + RODAPÉ -->
+    <section class="section section--surface" aria-labelledby="faq-heading">
+      <div class="container container--narrow">
+        <header class="section__header">
+          <p class="section__kicker">TIROU A DÚVIDA, PARTIU PRA OBRA</p>
+          <h2 id="faq-heading" class="section__title">Perguntas Frequentes</h2>
+        </header>
+
+        <div class="accordion">
+          <details>
+            <summary>1. Como recebo o material após a compra?</summary>
+            <div class="accordion__panel">
+              <p>O acesso é 100% imediato após a confirmação do pagamento (no Pix ou Cartão cai na mesma hora). Você recebe o link exclusivo de download no seu e-mail e também pelo WhatsApp cadastrado.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>2. Funciona sem internet na hora da instalação?</summary>
+            <div class="accordion__panel">
+              <p>Sim! O material foi desenhado exatamente para o campo de batalha. Você baixa o PDF uma única vez no celular ou computador e consulta todas as pranchas e o índice clicável 100% offline, mesmo em subsolos, garagens ou zonas rurais sem sinal.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>3. Serve para câmeras Intelbras, Hikvision, Dahua e chinesas?</summary>
+            <div class="accordion__panel">
+              <p>Sim. Os mapas e diagramas usam os parâmetros universais de rede e protocolo CFTV IP (IP, Máscara, Gateway, VLAN, PoE, ONVIF, RTSP e Codec), funcionando em qualquer fabricante ou câmera genérica.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>4. Posso imprimir para deixar na maleta de ferramentas?</summary>
+            <div class="accordion__panel">
+              <p>No Plano Integrador PRO você recebe inclusive as lâminas em layout A4 otimizado para impressão e plastificação, prontas para deixar na caixa de ferramentas ou treinar sua equipe.</p>
+            </div>
+          </details>
+
+          <details>
+            <summary>5. Sou iniciante no CFTV IP (só instalava analógico), vou conseguir usar?</summary>
+            <div class="accordion__panel">
+              <p>Com certeza. O Atlas foi feito justamente para tirar a trava técnica de quem está migrando do cabo coaxial para o IP ou já instala e sofre com falhas aleatórias de rede. É bater o olho no diagrama e aplicar.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__brand">Atlas Visual de Redes CFTV IP • Todos os direitos reservados</p>
+      <p class="site-footer__note">Dúvidas ou suporte técnico de acesso: suporte@atlascftvip.com.br</p>
+    </div>
+  </footer>
+
+  <!-- BARRA FLUTUANTE VISÍVEL A PARTIR DA DOBRA 2 -->
+  <div class="sticky-cta" id="sticky-cta" aria-hidden="true">
+    <div class="container sticky-cta__inner">
+      <div class="sticky-cta__text">
+        <strong>Atlas Visual CFTV IP</strong>
+        <span>30 Pranchas + 4 Bônus • R$ 37,00</span>
+      </div>
+      <a href="#planos" class="btn btn--primary btn--compact">QUERO ACESSO IMEDIATO 🚀</a>
+    </div>
+  </div>
+
+  <!-- MODAL NATIVO PARA CONFIGURAÇÃO DE LINKS DE CHECKOUT (SUBSTITUIR PELOS LINKS PAYT/CAKTO) -->
+  <dialog id="checkout-dialog" class="checkout-dialog" aria-labelledby="dialog-title">
+    <form method="dialog" class="checkout-dialog__form">
+      <div class="checkout-dialog__header">
+        <h2 id="dialog-title">Link de Checkout Pronto para Conectar</h2>
+        <button type="submit" class="checkout-dialog__close" aria-label="Fechar aviso">✕</button>
+      </div>
+      <p id="dialog-message" class="checkout-dialog__body"></p>
+      <div class="checkout-dialog__actions">
+        <button type="submit" class="btn btn--primary">Entendi, continuar vendo a página</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

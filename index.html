@@ -6,15 +6,26 @@
   <title>Atlas Visual de Redes CFTV IP — 30 Pranchas Técnicas Offline</title>
   <meta name="description" content="Instale, configure e resolva qualquer rede de CFTV IP em 3 minutos. 30 pranchas visuais (diagramas, mapas de configuração e fluxogramas) 100% offline no celular.">
   <meta name="theme-color" content="#09090B">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <meta name="color-scheme" content="light">
+  <meta name="text-scale" content="scale">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <main id="conteudo-principal">
-    <!-- DOBRA 1: HERO (ACIMA DA DOBRA) -->
-    <section class="hero" aria-labelledby="hero-heading">
+  <div class="page-shell" id="page-shell">
+    <header class="top-chrome" id="top-chrome">
+      <nav class="wayfinding-nav no-pill" aria-label="Navegação das seções">
+        <span class="wayfinding-nav__pill" aria-hidden="true"></span>
+        <a href="#topo" class="wayfinding-nav__link" data-section="topo" aria-current="location">Atlas</a>
+        <a href="#por-dentro" class="wayfinding-nav__link" data-section="por-dentro">Pranchas</a>
+        <a href="#beneficios" class="wayfinding-nav__link" data-section="beneficios">Campo</a>
+        <a href="#planos" class="wayfinding-nav__link" data-section="planos">Planos</a>
+        <a href="#faq" class="wayfinding-nav__link" data-section="faq">Dúvidas</a>
+      </nav>
+    </header>
+
+    <main id="conteudo-principal">
+      <!-- DOBRA 1: HERO (ACIMA DA DOBRA) -->
+      <section id="topo" class="hero" aria-labelledby="hero-heading">
       <div class="container hero__layout">
         <div class="hero__copy">
           <p class="eyebrow-badge">EXCLUSIVO PARA TÉCNICOS E INTEGRADORES DE CFTV IP</p>
@@ -34,10 +45,18 @@
 
         <!-- Ilustração vetorial minimalista de alta definição (Mockup Smartphone + Prancha CFTV IP) -->
         <div class="hero__visual">
-          <div class="device-frame">
+          <div class="device-frame" data-inspect-source="0" data-field-badge="PRANCHA #01" data-field-code="TOPOLOGIA PADRÃO" data-field-title="Topologia Padrão de Rede CFTV IP" data-field-note="Isole o switch PoE na porta LAN dedicada do NVR ou em VLAN própria para zerar travamentos no Wi-Fi do cliente.">
             <div class="device-frame__topbar">
               <span class="device-frame__tag">PRANCHA #01 • TOPOLOGIA PADRÃO</span>
-              <span class="device-frame__status">OFFLINE READY</span>
+              <span class="device-frame__actions">
+                <span class="device-frame__status">OFFLINE READY</span>
+                <button type="button" class="inspect-trigger inspect-trigger--dark" data-inspect="0" aria-label="Ampliar Prancha #01 no inspetor rápido">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                    <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                  </svg>
+                  <span>Ampliar</span>
+                </button>
+              </span>
             </div>
             <svg viewBox="0 0 460 320" class="blueprint-svg" role="img" aria-label="Diagrama vetorial de topologia de rede CFTV IP mostrando roteador, switch PoE gerenciável, gravador NVR e 4 câmeras IP conectadas">
               <defs>
@@ -135,7 +154,7 @@
             <div class="carousel__track" tabindex="0">
               <!-- Lâmina 1 -->
               <article class="carousel__slide" role="group" aria-roledescription="slide" aria-label="1 de 4" data-marker-name="Ir para lâmina 1: Diagrama #02 Rede CFTV Isolada">
-                <div class="sheet-card">
+                <div class="sheet-card" data-inspect-source="1" data-field-note="Separe o gateway da internet da sub-rede das câmeras para impedir que tráfego broadcast derrube o roteador doméstico.">
                   <div class="sheet-card__meta">
                     <span class="sheet-badge sheet-badge--blue">DIAGRAMA #02</span>
                     <span class="sheet-code">REDE ISOLADA / VLAN</span>
@@ -166,12 +185,20 @@
                     <text x="310" y="179" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#52525B">App remoto sem derrubar o Wi-Fi</text>
                   </svg>
                   <p class="sheet-card__caption">Separe o tráfego das câmeras da rede corporativa sem perder o acesso no celular.</p>
+                  <div class="sheet-card__footer">
+                    <button type="button" class="inspect-trigger" data-inspect="1" aria-label="Ampliar Diagrama #02 no inspetor rápido">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" aria-hidden="true">
+                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                      </svg>
+                      <span>Inspecionar prancha</span>
+                    </button>
+                  </div>
                 </div>
               </article>
 
               <!-- Lâmina 2 -->
               <article class="carousel__slide" role="group" aria-roledescription="slide" aria-label="2 de 4" data-marker-name="Ir para lâmina 2: Mapa #07 Integração Multimarcas">
-                <div class="sheet-card">
+                <div class="sheet-card" data-inspect-source="2" data-field-note="Use porta RTSP 554 e perfil ONVIF padrão com H.264/H.265 normal (sem Smart H.265+) ao misturar marcas no mesmo NVR.">
                   <div class="sheet-card__meta">
                     <span class="sheet-badge sheet-badge--dark">MAPA #07</span>
                     <span class="sheet-code">ONVIF / RTSP UNIVERSAL</span>
@@ -198,12 +225,20 @@
                     <text x="34" y="198" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#52525B">Sub Stream: D1/VGA • FPS 15 • Taxa constante (CBR)</text>
                   </svg>
                   <p class="sheet-card__caption">Os exatos parâmetros universais para fazer qualquer câmera subir em qualquer gravador.</p>
+                  <div class="sheet-card__footer">
+                    <button type="button" class="inspect-trigger" data-inspect="2" aria-label="Ampliar Mapa #07 no inspetor rápido">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" aria-hidden="true">
+                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                      </svg>
+                      <span>Inspecionar prancha</span>
+                    </button>
+                  </div>
                 </div>
               </article>
 
               <!-- Lâmina 3 -->
               <article class="carousel__slide" role="group" aria-roledescription="slide" aria-label="3 de 4" data-marker-name="Ir para lâmina 3: Fluxograma #03 Câmera Não Sobe no NVR">
-                <div class="sheet-card">
+                <div class="sheet-card" data-inspect-source="3" data-field-note="Teste ping na sub-rede -> confira máscara /24 e conflito de IP -> valide usuário ONVIF Admin e porta 80/8080 antes de resetar.">
                   <div class="sheet-card__meta">
                     <span class="sheet-badge sheet-badge--blue">FLUXOGRAMA #03</span>
                     <span class="sheet-code">DIAGNÓSTICO 3 MIN</span>
@@ -236,12 +271,20 @@
                     <text x="210" y="202" text-anchor="middle" font-family="Inter, sans-serif" font-size="8.5" font-weight="600" fill="#FFFFFF">AÇÃO FINAL: Adicionar Manualmente via ONVIF ou URL RTSP (/cam/realmonitor)</text>
                   </svg>
                   <p class="sheet-card__caption">Pare de chutar IP ou resetar câmera: siga a árvore Sim/Não até a causa raiz.</p>
+                  <div class="sheet-card__footer">
+                    <button type="button" class="inspect-trigger" data-inspect="3" aria-label="Ampliar Fluxograma #03 no inspetor rápido">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" aria-hidden="true">
+                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                      </svg>
+                      <span>Inspecionar prancha</span>
+                    </button>
+                  </div>
                 </div>
               </article>
 
               <!-- Lâmina 4 -->
               <article class="carousel__slide" role="group" aria-roledescription="slide" aria-label="4 de 4" data-marker-name="Ir para lâmina 4: Fluxograma #06 Câmeras Caindo à Noite">
-                <div class="sheet-card">
+                <div class="sheet-card" data-inspect-source="4" data-field-note="IR noturno dobra o consumo; some os Watts com margem de 20% no switch PoE e evite cabo CCA acima de 45 metros.">
                   <div class="sheet-card__meta">
                     <span class="sheet-badge sheet-badge--dark">FLUXOGRAMA #06</span>
                     <span class="sheet-code">QUEDA DE INFRA / PoE</span>
@@ -278,6 +321,14 @@
                     <text x="210" y="198" text-anchor="middle" font-family="Inter, sans-serif" font-size="8.5" font-weight="600" fill="#FFFFFF">SOLUÇÃO: Somar Watts totais x 0.8 + Exigir Uplink Gigabit + Cabo 100% Cobre</text>
                   </svg>
                   <p class="sheet-card__caption">Mate defeitos intermitentes na primeira visita técnica sem voltar 3 vezes na mesma obra.</p>
+                  <div class="sheet-card__footer">
+                    <button type="button" class="inspect-trigger" data-inspect="4" aria-label="Ampliar Fluxograma #06 no inspetor rápido">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" aria-hidden="true">
+                        <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                      </svg>
+                      <span>Inspecionar prancha</span>
+                    </button>
+                  </div>
                 </div>
               </article>
             </div>
@@ -342,7 +393,7 @@
     </section>
 
     <!-- DOBRA 3: BENEFÍCIOS NO CAMPO DE BATALHA -->
-    <section class="section" aria-labelledby="dobra3-heading">
+    <section id="beneficios" class="section" aria-labelledby="dobra3-heading">
       <div class="container">
         <header class="section__header">
           <p class="section__kicker">ROTINA EM CAMPO</p>
@@ -566,7 +617,7 @@
     </section>
 
     <!-- DOBRA 7: FAQ + RODAPÉ -->
-    <section class="section section--surface" aria-labelledby="faq-heading">
+    <section id="faq" class="section section--surface" aria-labelledby="faq-heading">
       <div class="container container--narrow">
         <header class="section__header">
           <p class="section__kicker">TIROU A DÚVIDA, PARTIU PRA OBRA</p>
@@ -611,14 +662,15 @@
         </div>
       </div>
     </section>
-  </main>
+    </main>
 
-  <footer class="site-footer">
-    <div class="container site-footer__inner">
-      <p class="site-footer__brand">Atlas Visual de Redes CFTV IP • Todos os direitos reservados</p>
-      <p class="site-footer__note">Dúvidas ou suporte técnico de acesso: suporte@atlascftvip.com.br</p>
-    </div>
-  </footer>
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p class="site-footer__brand">Atlas Visual de Redes CFTV IP • Todos os direitos reservados</p>
+        <p class="site-footer__note">Dúvidas ou suporte técnico de acesso: suporte@atlascftvip.com.br</p>
+      </div>
+    </footer>
+  </div>
 
   <!-- BARRA FLUTUANTE VISÍVEL A PARTIR DA DOBRA 2 -->
   <div class="sticky-cta" id="sticky-cta" aria-hidden="true">
@@ -631,8 +683,54 @@
     </div>
   </div>
 
+  <!-- INSPETOR RÁPIDO DE PRANCHAS (QUICK LOOK ANCORADO AO CARD + PAN 1:1 + SWIPE PARA FECHAR) -->
+  <dialog id="sheet-inspector" class="inspector-dialog" closedby="any" aria-labelledby="inspector-title">
+    <div class="inspector-dialog__shell" id="inspector-shell">
+      <div class="inspector-dialog__handle" id="inspector-handle" aria-hidden="true">
+        <span class="inspector-dialog__grabber"></span>
+      </div>
+
+      <div class="inspector-dialog__header">
+        <div class="inspector-dialog__title-group">
+          <div class="inspector-dialog__meta">
+            <span class="sheet-badge sheet-badge--blue" id="inspector-badge">PRANCHA #01</span>
+            <span class="sheet-code" id="inspector-code">TOPOLOGIA PADRÃO</span>
+          </div>
+          <h2 id="inspector-title" class="inspector-dialog__title">Topologia Padrão de Rede CFTV IP</h2>
+        </div>
+
+        <div class="inspector-dialog__controls">
+          <button type="button" class="inspector-dialog__btn" id="inspector-prev" aria-label="Prancha anterior">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+              <path d="M15 18l-6-6 6-6" />
+            </svg>
+          </button>
+          <span class="inspector-dialog__counter" id="inspector-counter" aria-live="polite">1 / 5</span>
+          <button type="button" class="inspector-dialog__btn" id="inspector-next" aria-label="Próxima prancha">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </button>
+          <button type="button" class="inspector-dialog__btn inspector-dialog__btn--zoom" id="inspector-zoom" aria-pressed="false" aria-label="Alternar ampliação de leitura">
+            1.6x
+          </button>
+          <button type="button" class="inspector-dialog__close" id="inspector-close" aria-label="Fechar inspetor">✕</button>
+        </div>
+      </div>
+
+      <div class="inspector-dialog__stage" id="inspector-stage">
+        <div class="inspector-dialog__canvas" id="inspector-canvas"></div>
+      </div>
+
+      <div class="inspector-dialog__footer">
+        <p id="inspector-note" class="inspector-dialog__note"></p>
+        <span id="inspector-hint" class="inspector-dialog__hint">Toque em 1.6x para dar zoom • Deslize a barra para fechar</span>
+      </div>
+    </div>
+  </dialog>
+
   <!-- MODAL NATIVO PARA CONFIGURAÇÃO DE LINKS DE CHECKOUT (SUBSTITUIR PELOS LINKS PAYT/CAKTO) -->
-  <dialog id="checkout-dialog" class="checkout-dialog" aria-labelledby="dialog-title">
+  <dialog id="checkout-dialog" class="checkout-dialog" closedby="any" aria-labelledby="dialog-title">
     <form method="dialog" class="checkout-dialog__form">
       <div class="checkout-dialog__header">
         <h2 id="dialog-title">Link de Checkout Pronto para Conectar</h2>
